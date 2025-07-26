@@ -2,6 +2,7 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 import { ArrowRight } from "lucide-react";
+import BackgroundVerificationServices from "@/components/BackgroundVerificationServices";
 
 const Services = () => {
   const services = [
@@ -49,21 +50,26 @@ const Services = () => {
           </p>
         </div>
         
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-          {services.slice(0, 5).map((service, index) => (
-            <Card key={index} className="hover:shadow-lg transition-all duration-300 hover:-translate-y-1">
-              <CardHeader className="text-center">
-                <div className="text-4xl mb-4">{service.icon}</div>
-                <CardTitle className="text-xl">{service.title}</CardTitle>
-              </CardHeader>
-              <CardContent>
-                <CardDescription className="text-center">
-                  {service.description}
-                </CardDescription>
-              </CardContent>
-            </Card>
-          ))}
-          
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+          {/* Background Verification Card */}
+          <Card className="text-center hover:shadow-lg transition-all duration-300">
+            <CardHeader>
+              <div className="text-3xl mb-2">✅</div>
+              <CardTitle className="text-2xl font-semibold leading-none tracking-tight">Background Verification</CardTitle>
+            </CardHeader>
+            <CardContent>
+              <p className="text-muted-foreground leading-relaxed">
+                Comprehensive checks to ensure trust and reliability.
+              </p>
+              <button
+                className="bg-primary text-white py-2 px-4 rounded hover:bg-primary-dark transition-all mt-4"
+                onClick={() => window.location.href = '/BackgroundVerification'}
+              >
+                All Kinds of Verification
+              </button>
+            </CardContent>
+          </Card>
+
           {/* Special All Loans Card with Link */}
           <Card className="hover:shadow-lg transition-all duration-300 hover:-translate-y-1 border-accent/50 bg-gradient-to-br from-accent/5 to-accent/10">
             <CardHeader className="text-center">
@@ -83,6 +89,9 @@ const Services = () => {
             </CardContent>
           </Card>
         </div>
+
+        {/* Background Verification Services Section */}
+        <BackgroundVerificationServices />
       </div>
     </section>
   );

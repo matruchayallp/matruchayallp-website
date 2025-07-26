@@ -22,9 +22,7 @@ const Contact = () => {
             <CardContent>
               <p className="text-muted-foreground leading-relaxed">
                 Matrucahaya LLP<br />
-                123 Finance Street<br />
-                Business District<br />
-                Mumbai, Maharashtra 400001
+                Ahemdabad, Gujarat 380026
               </p>
             </CardContent>
           </Card>

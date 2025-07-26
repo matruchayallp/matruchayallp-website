@@ -305,7 +305,7 @@ const AllLoans = () => {
             </Button>
             <Button variant="outline" size="lg" className="flex items-center gap-2">
               <Mail className="h-4 w-4" />
-              Email: info@matruchayaconsultancy.com
+              Email: matruchayaconsultanacy@gmail.com
             </Button>
           </div>
         </div>

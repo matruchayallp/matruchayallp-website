@@ -21,10 +21,8 @@ const Contact = () => {
             </CardHeader>
             <CardContent>
               <p className="text-muted-foreground leading-relaxed">
-                Matruchaya Consultancy<br />
-                123 Finance Street<br />
-                Business District<br />
-                Mumbai, Maharashtra 400001
+                Matrucahaya LLP<br />
+                Ahemdabad, Gujarat 380026
               </p>
             </CardContent>
           </Card>
@@ -55,10 +53,10 @@ const Contact = () => {
             <CardContent>
               <div className="space-y-2">
                 <p className="text-primary">
-                  info@matruchayaconsultancy.com
+                  matruchayaconsultanacy@gmail.com
                 </p>
                 <p className="text-primary">
-                  loans@matruchayaconsultancy.com
+                  matruchayaconsultanacy2@gmail.com
                 </p>
               </div>
             </CardContent>

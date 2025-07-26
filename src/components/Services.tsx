@@ -52,21 +52,23 @@ const Services = () => {
         
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           {/* Background Verification Card */}
-          <Card className="text-center hover:shadow-lg transition-all duration-300">
+          <Card className="text-center hover:shadow-lg transition-all duration-300 flex flex-col justify-between">
             <CardHeader>
               <div className="text-3xl mb-2">✅</div>
               <CardTitle className="text-2xl font-semibold leading-none tracking-tight">Background Verification</CardTitle>
             </CardHeader>
             <CardContent>
-              <p className="text-muted-foreground leading-relaxed">
+              <p className="text-muted-foreground leading-relaxed mb-6">
                 Comprehensive checks to ensure trust and reliability.
               </p>
-              <button
-                className="bg-primary text-white py-2 px-4 rounded hover:bg-primary-dark transition-all mt-4"
-                onClick={() => window.location.href = '/BackgroundVerification'}
-              >
-                All Kinds of Verification
-              </button>
+              <div className="flex justify-center">
+                <Link
+                  to="/background-verification"
+                  className="bg-primary text-white py-2 px-4 rounded hover:bg-primary-dark transition-all"
+                >
+                  All Kinds of Verification
+                </Link>
+              </div>
             </CardContent>
           </Card>
 

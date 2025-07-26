@@ -1,5 +1,3 @@
-const BackgroundVerificationServices = () => {
+export default function BackgroundVerificationServices() {
   return null;
-};
-
-export default BackgroundVerificationServices;
+}

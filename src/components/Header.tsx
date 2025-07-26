@@ -9,7 +9,7 @@ const Header = () => {
       <div className="container mx-auto px-4 flex flex-col md:flex-row items-center justify-between">
         <div className="flex flex-col items-center md:flex-row md:items-center md:text-left w-full md:w-auto">
           <img
-            src="/public/favicon.ico"
+            src="/favicon.ico"
             alt="Logo"
             className="w-16 h-16 md:w-20 md:h-20 mb-2 md:mb-0 mx-auto md:mx-0"
           />

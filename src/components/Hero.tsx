@@ -2,10 +2,10 @@ const Hero = () => {
   return (
     <section className="bg-gradient-to-br from-primary to-primary/80 text-primary-foreground py-20">
       <div className="container mx-auto px-4 text-center">
-        <h2 className="text-4xl md:text-6xl font-bold mb-6">
-          Empowering Trust. Driving Excellence.
-        </h2>
-        <p className="text-xl md:text-2xl max-w-3xl mx-auto leading-relaxed">
+        <h1 className="text-4xl md:text-5xl font-bold mb-4">
+          Your Trusted Identity Partner 
+        </h1>
+        <p className="text-lg md:text-xl mb-8">
           Matruchaya LLP is a trusted name in delivering reliable, efficient, and
           future-ready business solutions tailored to meet the evolving needs of
           modern organizations. We help businesses minimize risk, maximize

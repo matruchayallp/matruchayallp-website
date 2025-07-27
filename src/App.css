@@ -1,13 +1,14 @@
 /* --- Corporate Color Palette --- */
+/* Updated Shades of Teal Color Palette */
 :root {
-  --primary: #2563eb; /* blue-600 */
-  --secondary: #64748b; /* slate-500 */
-  --accent: #f59e42; /* orange-400 */
-  --background: #f8fafc; /* slate-50 */
-  --foreground: #0f172a; /* slate-900 */
-  --muted: #e2e8f0; /* slate-200 */
-  --success: #22c55e; /* green-500 */
-  --danger: #ef4444; /* red-500 */
+  --primary: #265C4B; /* CR---Shades-of-Teal-1-hex */
+  --secondary: #146551; /* CR---Shades-of-Teal-2-hex */
+  --accent: #007566; /* CR---Shades-of-Teal-3-hex */
+  --background: #8FC1B5; /* CR---Shades-of-Teal-5-hex */
+  --foreground: #0f172a; /* slate-900, unchanged for contrast */
+  --muted: #589A8D; /* CR---Shades-of-Teal-4-hex */
+  --success: #22c55e; /* green-500, unchanged */
+  --danger: #ef4444; /* red-500, unchanged */
 }
 
 body {
@@ -45,7 +46,7 @@ body {
   transition: background 0.2s;
 }
 .corporate-btn:hover {
-  background: #1d4ed8; /* blue-700 */
+  background: #1b5f4d; /* blue-700 */
 }
 
 .corporate-card {

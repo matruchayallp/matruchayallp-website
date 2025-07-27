@@ -297,17 +297,17 @@ const AllLoans = () => {
             Contact us today for personalized assistance.
           </p>
           
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+          <div className="flex flex-col sm:flex-row gap-4 justify-center mb-6">
             <Button size="lg" className="flex items-center gap-2">
               <Phone className="h-4 w-4" />
               Call Now: +91 9016287212 / +91 7016646567
-
             </Button>
             <Button variant="outline" size="lg" className="flex items-center gap-2">
               <Mail className="h-4 w-4" />
               Email: matruchayaconsultanacy@gmail.com
             </Button>
           </div>
+          <a href="/apply" className="corporate-btn text-lg px-8 py-3 inline-block">Apply Now</a>
         </div>
       </section>
     </div>

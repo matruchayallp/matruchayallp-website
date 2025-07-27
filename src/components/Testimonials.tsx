@@ -3,7 +3,7 @@ import { Card, CardContent } from "@/components/ui/card";
 const Testimonials = () => {
   const testimonials = [
     {
-      quote: "Matrucahaya LLP made my home loan process incredibly smooth. Their team was always available to answer my questions and guided me through every step.",
+      quote: "Matruchaya Consultancy LLP made my home loan process incredibly smooth. Their team was always available to answer my questions and guided me through every step.",
       name: "Rajesh Patel",
       location: "Mumbai"
     },

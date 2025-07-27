@@ -66,7 +66,27 @@ export default {
 					'accent-foreground': 'hsl(var(--sidebar-accent-foreground))',
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
-				}
+				},
+				// Clean corporate palette for direct use
+				corporate: {
+					primary: '#2563eb', // blue-600
+					primaryDark: '#1d4ed8', // blue-700
+					secondary: '#64748b', // slate-500
+					accent: '#f59e42', // orange-400
+					background: '#f8fafc', // slate-50
+					foreground: '#0f172a', // slate-900
+					muted: '#e2e8f0', // slate-200
+					success: '#22c55e', // green-500
+					danger: '#ef4444', // red-500
+				},
+			},
+			fontFamily: {
+				sans: [
+					'Inter',
+					'Segoe UI',
+					'Arial',
+					'sans-serif',
+				],
 			},
 			borderRadius: {
 				lg: 'var(--radius)',

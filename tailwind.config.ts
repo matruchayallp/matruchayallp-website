@@ -67,17 +67,20 @@ export default {
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
 				},
-				// Clean corporate palette for direct use
+				// Updated corporate palette for direct use
 				corporate: {
-					primary: '#2563eb', // blue-600
-					primaryDark: '#1d4ed8', // blue-700
-					secondary: '#64748b', // slate-500
-					accent: '#f59e42', // orange-400
-					background: '#f8fafc', // slate-50
-					foreground: '#0f172a', // slate-900
-					muted: '#e2e8f0', // slate-200
-					success: '#22c55e', // green-500
-					danger: '#ef4444', // red-500
+					primary: '#1B3A64', // Primary Blue (Dark)
+					primaryDark: '#1B3A64', // Primary Blue (Dark)
+					secondary: '#4CAF50', // Primary Green
+					accent: '#FFD700', // Accent Yellow/Gold
+					accent2: '#5C92AE', // Secondary Light Blue
+					neutral: '#F2F2F2', // Neutral Off-White
+					neutral2: '#E0E0E0', // Neutral Light Gray
+					background: '#FFFFFF', // White
+					foreground: '#1B3A64', // Primary Blue (Dark)
+					muted: '#5C92AE', // Use light blue for muted
+					success: '#4CAF50', // Green
+					danger: '#ef4444', // Red (unchanged)
 				},
 			},
 			fontFamily: {

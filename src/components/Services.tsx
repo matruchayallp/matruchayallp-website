@@ -81,29 +81,31 @@ const Services = () => {
         </div>
 
         {/* Loan Services Section */}
-        <div className="mb-16">
-          <h3 className="text-2xl font-bold text-[var(--primary)] mb-6 text-center">Loan Services</h3>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <div className="mb-16 bg-white/30 backdrop-blur-lg rounded-3xl shadow-2xl py-8 px-2 animate-fade-in">
+          <h3 className="text-3xl font-extrabold text-corporate-primary mb-8 text-center tracking-tight drop-shadow-lg">Loan Services</h3>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             {loanServices.map((service, idx) => (
-              <Card key={idx} className="text-center hover:shadow-lg transition-all duration-300 flex flex-col justify-between">
+              <Card key={service.title} className="relative overflow-hidden rounded-2xl backdrop-blur-lg bg-white/40 border border-corporate-accent2 shadow-xl transition-transform duration-300 hover:-translate-y-2 hover:shadow-2xl animate-fade-in">
+                <span className="absolute top-0 left-0 w-full h-2 bg-gradient-to-r from-corporate-accent2 to-corporate-primary animate-gradient-move"></span>
                 <CardHeader>
-                  <div className="text-3xl mb-2">{service.icon}</div>
-                  <CardTitle className="text-2xl font-semibold leading-none tracking-tight">{service.title}</CardTitle>
+                  <div className="flex justify-center mb-2 animate-bounce-slow">
+                    <svg width="44" height="44" viewBox="0 0 44 44" fill="none">
+                      <defs>
+                        <radialGradient id={`loanGrad${idx}`} cx="50%" cy="50%" r="50%" fx="50%" fy="50%">
+                          <stop offset="0%" stopColor="#FFD700" stopOpacity="0.8" />
+                          <stop offset="100%" stopColor="#1B3A64" stopOpacity="0.2" />
+                        </radialGradient>
+                      </defs>
+                      <circle cx="22" cy="22" r="20" fill={`url(#loanGrad${idx})`} />
+                      <text x="22" y="30" textAnchor="middle" fontSize="28" fill="#1B3A64">{service.icon}</text>
+                    </svg>
+                  </div>
+                  <CardTitle className="text-corporate-primary font-bold text-xl text-center">{service.title}</CardTitle>
                 </CardHeader>
                 <CardContent>
-                  <p className="text-muted-foreground leading-relaxed mb-6">
+                  <p className="text-corporate-foreground leading-relaxed text-lg text-center">
                     {service.description}
                   </p>
-                  {service.title === "All Types of Loans" && (
-                    <div className="flex justify-center">
-                      <Link
-                        to="/all-loans"
-                        className="bg-primary text-white py-2 px-4 rounded hover:bg-primary-dark transition-all"
-                      >
-                        View All Loans
-                      </Link>
-                    </div>
-                  )}
                 </CardContent>
               </Card>
             ))}
@@ -111,17 +113,29 @@ const Services = () => {
         </div>
 
         {/* Background Verification Services Section */}
-        <div>
-          <h3 className="text-2xl font-bold text-[var(--primary)] mb-6 text-center">Background Verification Services</h3>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+        <div className="bg-white/30 backdrop-blur-lg rounded-3xl py-8 px-2 shadow-2xl animate-fade-in">
+          <h3 className="text-3xl font-extrabold text-corporate-primary mb-8 text-center tracking-tight drop-shadow-lg">Background Verification Services</h3>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-8">
             {bgvServices.map((service, idx) => (
-              <Card key={idx} className="text-center hover:shadow-lg transition-all duration-300 flex flex-col justify-between">
+              <Card key={idx} className="relative overflow-hidden rounded-2xl backdrop-blur-lg bg-white/40 border border-corporate-accent2 shadow-xl transition-transform duration-300 hover:-translate-y-2 hover:shadow-2xl animate-fade-in flex flex-col justify-between">
+                <span className="absolute top-0 left-0 w-full h-2 bg-gradient-to-r from-corporate-accent2 to-corporate-primary animate-gradient-move"></span>
                 <CardHeader>
-                  <div className="text-3xl mb-2">{service.icon}</div>
-                  <CardTitle className="text-2xl font-semibold leading-none tracking-tight">{service.title}</CardTitle>
+                  <div className="flex justify-center mb-2 animate-bounce-slow">
+                    <svg width="40" height="40" viewBox="0 0 40 40" fill="none">
+                      <defs>
+                        <radialGradient id={`bgvGrad${idx}`} cx="50%" cy="50%" r="50%" fx="50%" fy="50%">
+                          <stop offset="0%" stopColor="#FFD700" stopOpacity="0.8" />
+                          <stop offset="100%" stopColor="#1B3A64" stopOpacity="0.2" />
+                        </radialGradient>
+                      </defs>
+                      <circle cx="20" cy="20" r="18" fill={`url(#bgvGrad${idx})`} />
+                      <text x="20" y="28" textAnchor="middle" fontSize="24" fill="#1B3A64">{service.icon}</text>
+                    </svg>
+                  </div>
+                  <CardTitle className="text-corporate-primary font-bold text-xl text-center">{service.title}</CardTitle>
                 </CardHeader>
                 <CardContent>
-                  <p className="text-muted-foreground leading-relaxed mb-4">
+                  <p className="text-corporate-foreground leading-relaxed text-lg text-center mb-4">
                     {service.description}
                   </p>
                 </CardContent>

@@ -8,6 +8,9 @@ const About = () => {
         <path d="M32 16L40 32H24L32 16Z" fill="#4CAF50" />
       </svg>
       <div className="container mx-auto px-4">
+        <div className="mb-6">
+          <button onClick={() => window.history.back()} className="mb-4 px-4 py-2 bg-corporate-primary text-white rounded-lg shadow hover:bg-corporate-accent2 transition-all hidden md:inline-block">← Back</button>
+        </div>
         <div className="max-w-4xl mx-auto text-center relative z-10">
           <h2 className="text-4xl md:text-5xl font-extrabold text-corporate-primary mb-3 tracking-tight drop-shadow-lg">
             About Matruchaya Consultancy LLP

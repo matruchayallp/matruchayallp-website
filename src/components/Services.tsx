@@ -1,3 +1,11 @@
+        <div className="text-center mb-12">
+          <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
+            Our Services
+          </h2>
+          <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+            Comprehensive financial and verification solutions to help you achieve your goals
+          </p>
+        </div>
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Link } from "react-router-dom";
 
@@ -26,6 +34,21 @@ const loanServices = [
     title: "Mortgage Loan",
     icon: "🏦",
     description: "Leverage your property value for additional financial support."
+  },
+  {
+    title: "Project Loans",
+    icon: "🗂️",
+    description: "Finance your new projects with tailored project loan solutions."
+  },
+  {
+    title: "Digital Loans",
+    icon: "💻",
+    description: "Quick and easy digital loans for your online needs."
+  },
+  {
+    title: "Credit Card Loans",
+    icon: "💳",
+    description: "Flexible credit card loan options for instant financial support."
   },
   {
     title: "All Types of Loans",
@@ -64,6 +87,11 @@ const bgvServices = [
     title: "Identity Verification",
     icon: "🪪",
     description: "Authenticate government-issued IDs and personal details."
+  },
+  {
+    title: "All Types Background Verification",
+    icon: "✅",
+    description: "Comprehensive background verification services for all requirements."
   }
 ];
 
@@ -71,14 +99,7 @@ const Services = () => {
   return (
     <section className="py-16 bg-background">
       <div className="container mx-auto px-4">
-        <div className="text-center mb-12">
-          <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
-            Our Services
-          </h2>
-          <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Comprehensive financial and verification solutions to help you achieve your goals
-          </p>
-        </div>
+        {/* Removed back button and 'Our Services' text above service cards as requested */}
 
         {/* Loan Services Section */}
         <div className="mb-16 bg-white/30 backdrop-blur-lg rounded-3xl shadow-2xl py-8 px-2 animate-fade-in">
